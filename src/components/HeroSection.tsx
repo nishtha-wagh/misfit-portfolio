@@ -44,9 +44,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg text-muted-foreground max-w-lg mb-8 font-body"
             >
-              Senior Data Scientist with 4+ years building and deploying 
-              production ML and LLM systems, translating ambiguous problems 
-              into measurable business impact.
+              I build in the gap between ambiguous business problems and production systems that drive decisions. 4+ years shipping ML and LLM solutions—from credit models serving millions at Amazon to analytics pipelines processing thousands of narratives weekly.
             </motion.p>
 
             <motion.div

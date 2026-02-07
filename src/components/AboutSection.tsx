@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Brain, BarChart3, Database, Code2 } from "lucide-react";
 
 const skills = [
-  { icon: Brain, label: "Machine Learning", color: "bg-coral-light text-coral" },
-  { icon: BarChart3, label: "Statistical Analysis", color: "bg-mint-light text-mint" },
+  { icon: Brain, label: "Machine Learning & Statistics", color: "bg-coral-light text-coral" },
+  { icon: BarChart3, label: "Experimentation & Analytics", color: "bg-mint-light text-mint" },
   { icon: Database, label: "Data Engineering", color: "bg-lavender-light text-lavender" },
-  { icon: Code2, label: "Python & R", color: "bg-peach-light text-peach" },
+  { icon: Code2, label: "Python & SQL", color: "bg-peach-light text-peach" },
 ];
 
 const AboutSection = () => {
@@ -37,19 +37,13 @@ const AboutSection = () => {
             className="space-y-4 text-muted-foreground font-body leading-relaxed"
           >
             <p>
-              I'm a data scientist who thrives at the intersection of rigorous analysis 
-              and creative problem-solving. With over 3 years of experience in machine 
-              learning, statistical modeling, and data storytelling, I bring a "misfit" 
-              perspective to every challenge.
+              I'm a Senior Data Scientist with 4+ years building end-to-end ML systems from scoping business problems to deploying models that serve production traffic. I work across experimentation, predictive modeling, and LLM applications, handling everything from feature engineering to model monitoring.
             </p>
             <p>
-              My approach? Question the defaults. Challenge assumptions. Find the signal 
-              in the noise that everyone else overlooks. From predictive modeling to 
-              NLP pipelines, I build solutions that don't just work — they surprise.
+                My experience includes credit risk modeling at Amazon (gradient boosting models serving millions of daily decisions on AWS), analytics and LLM pipelines at ASU (Azure OpenAI and GCP-based systems processing thousands of records weekly), and A/B testing frameworks that drove measurable engagement improvements. I've worked with messy real-world data, tight latency requirements, and cross-functional stakeholders across Product, Engineering, and Business teams.
             </p>
             <p>
-              When I'm not training models, you'll find me writing about data science, 
-              mentoring aspiring analysts, or exploring the latest in AI research.
+              What distinguishes my approach: I validate assumptions before building, I optimize for production performance over notebook accuracy, and I focus on systems that inform actual business decisions. I thrive in ambiguous problem spaces where the requirements aren't clear and the path to impact requires both technical depth and business judgment.
             </p>
           </motion.div>
 
