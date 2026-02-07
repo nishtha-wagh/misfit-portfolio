@@ -3,43 +3,66 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    role: "Senior Data Scientist",
-    company: "TechCorp Analytics",
-    period: "2023 – Present",
+    role: "Data Scientist",
+    company: "ASU Enterprise Partners",
+    period: "Mar 2024 – Present",
     description:
-      "Leading ML initiatives for customer churn prediction and recommendation systems. Reduced churn by 18% through ensemble modeling approaches.",
-    tags: ["Python", "TensorFlow", "AWS", "Spark"],
+      "Turning thousands of alumni narratives into actionable insights with LLM pipelines on GCP. Designed A/B experiments that improved engagement by 7% and built topic models that cut manual categorization from weeks to hours.",
+    tags: [
+      "LLMs",
+      "NLP",
+      "A/B Testing",
+      "Machine Learning",
+      "Python",
+      "Data Pipelines",
+      "GCP",
+    ],
+  },
+  {
+    role: "Senior Data Scientist",
+    company: "Amazon India (via Axio)",
+    period: "May 2022 – Jun 2023",
+    description:
+      "Shipped credit risk models on AWS serving 500K+ daily decisions. Led the pipeline optimization that cut runtime by 95% (8 hours to 25 minutes) and fixed data quality issues that improved model reliability by 12%.",
+    tags: [
+      "Production ML",
+      "Machine Learning",
+      "Model Deployment",
+      "AWS",
+      "Data Pipelines",
+      "Credit Risk",
+      "Large-Scale Systems",
+    ],
   },
   {
     role: "Data Scientist",
-    company: "DataDriven Inc.",
-    period: "2021 – 2023",
+    company: "Amazon India (via Axio)",
+    period: "Jan 2021 – May 2022",
     description:
-      "Built NLP pipelines for sentiment analysis across 50M+ social media posts. Developed real-time dashboards for executive decision-making.",
-    tags: ["NLP", "PyTorch", "SQL", "Tableau"],
-  },
-  {
-    role: "Junior Data Analyst",
-    company: "StartupHub",
-    period: "2020 – 2021",
-    description:
-      "Performed A/B testing and statistical analysis to optimize conversion funnels. Automated reporting pipelines saving 20+ hours weekly.",
-    tags: ["R", "Python", "PostgreSQL", "Excel"],
+      "Built and deployed risk models for Amazon's BNPL product serving 2M+ customers. Automated underwriting with batch pipelines processing 300K+ daily evaluations and engineered features from bureau data and transaction patterns.",
+    tags: [
+      "Feature Engineering",
+      "Statistical Modeling",
+      "SQL",
+      "Python",
+      "Batch Processing",
+      "Predictive Modeling",
+    ],
   },
 ];
 
 const education = [
   {
     degree: "M.S. in Data Science",
-    school: "University of Innovation",
-    period: "2019 – 2021",
-    detail: "Thesis: \"Adversarial Robustness in Federated Learning Systems\"",
+    school: "Arizona State University",
+    period: "Aug 2023 – May 2025",
+    detail: "GPA: 3.90 · Expected Graduation: May 2025",
   },
   {
-    degree: "B.S. in Statistics & Computer Science",
-    school: "State University",
-    period: "2015 – 2019",
-    detail: "Summa Cum Laude · Dean's List all semesters",
+    degree: "B.Tech in Computer Engineering",
+    school: "Nirma University, India",
+    period: "Aug 2017 – Jun 2021",
+    detail: "GPA: 3.46",
   },
 ];
 

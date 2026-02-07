@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Brain, BarChart3, Database, Code2 } from "lucide-react";
 
 const skills = [
-  { icon: Brain, label: "Machine Learning & Statistics", color: "bg-coral-light text-coral" },
-  { icon: BarChart3, label: "Experimentation & Analytics", color: "bg-mint-light text-mint" },
+  { icon: Brain, label: "Machine Learning", color: "bg-coral-light text-coral" },
+  { icon: BarChart3, label: "Statistical Analysis", color: "bg-mint-light text-mint" },
   { icon: Database, label: "Data Engineering", color: "bg-lavender-light text-lavender" },
-  { icon: Code2, label: "Python & SQL", color: "bg-peach-light text-peach" },
+  { icon: Code2, label: "Python & R", color: "bg-peach-light text-peach" },
 ];
 
 const AboutSection = () => {
@@ -37,15 +37,15 @@ const AboutSection = () => {
             className="space-y-4 text-muted-foreground font-body leading-relaxed"
           >
             <p>
-              I'm a <b>Senior Data Scientist with 4+ years</b> building production ML systems—from messy, ambiguous problems to deployed solutions driving real decisions. My experience spans <b>credit risk modeling, LLM pipelines, and experimentation</b>, working across the full lifecycle from feature engineering to monitoring systems at scale.
+              I'm a <b>Senior Data Scientist with 4+ years</b> building production ML systems from messy, ambiguous problems to deployed solutions driving real decisions. My experience spans <b>credit risk modeling, LLM pipelines, and experimentation</b>, working across the full lifecycle from feature engineering to monitoring systems at scale.
             </p>
 
             <p>
-              My approach? <b>Question the defaults. Challenge assumptions. Find the signal everyone else overlooks.</b> I don't accept the first problem framing or jump straight to algorithms. I validate with data, optimize for production (not just notebooks), and build systems designed to survive the real world—messy data, shifting requirements, and all.
+              My approach? <b>Question the defaults. Challenge assumptions. Find the signal everyone else overlooks.</b> I don't accept the first problem framing or jump straight to algorithms. I validate with data, optimize for production (not just notebooks), and build systems designed to survive the real world messy data, shifting requirements, and all.
             </p>
 
             <p>
-              At <b>Amazon</b>, I built credit risk models on <b>AWS serving 500K+ daily decisions</b> and optimized pipelines that cut runtime by <b>95%</b>. At <b>ASU</b>, I'm deploying <b>LLM systems on GCP processing 20K+ weekly</b> and running A/B tests that <b>improved engagement by 7%</b>. When I'm not shipping models, you'll find me writing about data science, mentoring aspiring analysts, or figuring out which ML research actually matters for production.
+              At <b>Amazon</b>, I built credit risk models on <b>AWS serving 500K+ daily decisions</b> and optimized pipelines that cut runtime by <b>95%</b>. At <b>ASU</b>, I'm deploying <b>LLM systems on GCP processing 20K+ weekly</b> and running A/B tests that <b>improved engagement by 7%</b>. When I’m not building models, you’ll find me writing about data science, mentoring aspiring analysts, or sharpening my thinking through strategy-based games.
             </p>
           </motion.div>
 
