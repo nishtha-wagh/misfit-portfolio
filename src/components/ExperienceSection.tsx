@@ -31,7 +31,6 @@ const experiences = [
       "AWS",
       "Data Pipelines",
       "Credit Risk",
-      "Large-Scale Systems",
     ],
   },
   {
@@ -53,13 +52,13 @@ const experiences = [
 
 const education = [
   {
-    degree: "M.S. in Data Science",
+    degree: "Master of Science in Data Science",
     school: "Arizona State University",
     period: "Aug 2023 – May 2025",
-    detail: "GPA: 3.90 · Expected Graduation: May 2025",
+    detail: "GPA: 3.90",
   },
   {
-    degree: "B.Tech in Computer Engineering",
+    degree: "Bachelor of Technology in Computer Engineering",
     school: "Nirma University, India",
     period: "Aug 2017 – Jun 2021",
     detail: "GPA: 3.46",

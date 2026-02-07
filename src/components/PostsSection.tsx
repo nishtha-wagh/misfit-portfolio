@@ -1,43 +1,13 @@
 import { motion } from "framer-motion";
 import { Heart, MessageCircle, Share2, Clock } from "lucide-react";
-
-const posts = [
-  {
-    title: "Why Your ML Model Doesn't Need More Data",
-    excerpt:
-      "Everyone's obsessed with bigger datasets. But sometimes, the real breakthrough comes from better feature engineering and domain expertise...",
-    date: "Jan 2026",
-    likes: 342,
-    comments: 47,
-    tag: "Hot Take",
-    tagColor: "bg-coral-light text-coral",
-  },
-  {
-    title: "The Art of Being a Misfit in Data Science",
-    excerpt:
-      "Conformity kills innovation. Here's why the best data scientists are the ones who dare to ask the 'stupid' questions...",
-    date: "Dec 2025",
-    likes: 891,
-    comments: 123,
-    tag: "Personal",
-    tagColor: "bg-lavender-light text-lavender",
-  },
-  {
-    title: "5 SQL Tricks That Changed My Life",
-    excerpt:
-      "Window functions, CTEs, and lateral joins — the holy trinity of analytical SQL. Let me walk you through real-world examples...",
-    date: "Nov 2025",
-    likes: 1204,
-    comments: 89,
-    tag: "Tutorial",
-    tagColor: "bg-mint-light text-mint",
-  },
-];
+import { Link } from "react-router-dom";
+import { posts } from "@/data/posts";
 
 const PostsSection = () => {
   return (
-    <section id="posts" className="section-padding">
+    <section id="writing" className="section-padding">
       <div className="max-w-7xl mx-auto">
+        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,48 +22,67 @@ const PostsSection = () => {
           </h2>
         </motion.div>
 
+        {/* Latest posts preview */}
         <div className="grid md:grid-cols-3 gap-6">
-          {posts.map((post, i) => (
+          {posts.slice(0, 3).map((post, i) => (
             <motion.article
-              key={post.title}
+              key={post.slug}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group rounded-2xl border border-border bg-card p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              className="group rounded-2xl border border-border bg-card p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span
-                  className={`px-3 py-1 rounded-full text-xs font-display font-medium ${post.tagColor}`}
-                >
-                  {post.tag}
-                </span>
-                <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <Clock size={12} />
-                  {post.date}
-                </span>
-              </div>
+              <Link to={`/posts/${post.slug}`} className="block h-full">
+                {/* Meta */}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 rounded-full text-xs font-display font-medium bg-muted">
+                    {post.category}
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <Clock size={12} />
+                    {post.date}
+                  </span>
+                </div>
 
-              <h3 className="font-display text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                {post.title}
-              </h3>
-              <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
-                {post.excerpt}
-              </p>
+                {/* Title */}
+                <h3 className="font-display text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                  {post.title}
+                </h3>
 
-              <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                <span className="flex items-center gap-1">
-                  <Heart size={14} className="text-coral" />
-                  {post.likes}
-                </span>
-                <span className="flex items-center gap-1">
-                  <MessageCircle size={14} />
-                  {post.comments}
-                </span>
-                <Share2 size={14} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
+                {/* Excerpt */}
+                <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
+                  {post.excerpt}
+                </p>
+
+                {/* Engagement */}
+                <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} className="text-coral" />
+                    {post.likes}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <MessageCircle size={14} />
+                    {post.comments}
+                  </span>
+                  <Share2
+                    size={14}
+                    className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              </Link>
             </motion.article>
           ))}
+        </div>
+
+        {/* View all posts CTA */}
+        <div className="mt-10">
+          <Link
+            to="/posts"
+            className="font-display text-sm font-medium text-primary hover:underline"
+          >
+            View all posts →
+          </Link>
         </div>
       </div>
     </section>
