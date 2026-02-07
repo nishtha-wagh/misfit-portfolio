@@ -91,7 +91,7 @@ const HeroSection = () => {
 
     {/* ML — bottom left */}
     <div
-      className="absolute bottom-12 -left-6 w-28 h-28 rounded-2xl bg-sprout border border-border flex items-center justify-center animate-float"
+      className="absolute bottom-12 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-2xl font-bold text-foreground">ML</span>
