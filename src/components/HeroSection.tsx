@@ -71,61 +71,41 @@ const HeroSection = () => {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="hidden md:flex justify-center"
-          >
-            <div className="relative">
-              {/* Main anchor */}
-              <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
+<motion.div
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, delay: 0.3 }}
+  className="hidden md:flex justify-center"
+>
+  <div className="relative flex flex-col items-center">
+    {/* Main anchor */}
+    <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float mb-6" />
 
-              {/* 4+ yrs — top right (primary) */}
-              <div
-                className="absolute -top-6 right-6 w-32 h-32 rounded-2xl bg-mint-light border border-border flex items-center justify-center animate-float"
-                style={{ animationDelay: "1s" }}
-              >
-                <span className="font-display text-3xl font-bold text-foreground">4+</span>
-                <span className="text-xs text-muted-foreground ml-1">yrs</span>
-              </div>
+    {/* Floating highlights */}
+    <div className="absolute top-6 right-0 w-28 h-28 rounded-2xl bg-mint-light border border-border flex items-center justify-center animate-float">
+      <span className="font-display text-2xl font-bold text-foreground">4+</span>
+      <span className="text-xs ml-1 text-muted-foreground">yrs</span>
+    </div>
 
-              {/* ML — bottom left */}
-              <div
-                className="absolute bottom-2 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
-                style={{ animationDelay: "2s" }}
-              >
-                <span className="font-display text-2xl font-bold text-foreground">ML</span>
-              </div>
+    <div className="absolute bottom-10 left-0 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float">
+      <span className="font-display text-xl font-bold text-foreground">ML</span>
+    </div>
 
-              {/* LLM — bottom right */}
-              <div
-                className="absolute bottom-4 right-2 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
-                style={{ animationDelay: "2.5s" }}
-              >
-                <span className="font-display text-xl font-bold text-foreground">LLM</span>
-              </div>
+    {/* Clean stacked grid (no absolute chaos) */}
+    <div className="grid grid-cols-2 gap-4 mt-8">
+      <div className="w-32 h-20 rounded-2xl bg-cream border border-border flex items-center justify-center">
+        <span className="font-display text-sm font-semibold">AWS · GCP</span>
+      </div>
+      <div className="w-32 h-20 rounded-2xl bg-peach-light border border-border flex items-center justify-center">
+        <span className="font-display text-sm font-semibold">LLM</span>
+      </div>
+      <div className="col-span-2 w-full h-20 rounded-2xl bg-coral-light border border-border flex items-center justify-center">
+        <span className="font-display text-sm font-bold">PRODUCTION</span>
+      </div>
+    </div>
+  </div>
+</motion.div>
 
-              {/* AWS · GCP — top left */}
-              <div
-                className="absolute -top-4 -left-4 w-36 h-24 rounded-2xl bg-cream border border-border flex items-center justify-center animate-float"
-                style={{ animationDelay: "3s" }}
-              >
-                <span className="font-display text-sm font-semibold text-foreground">
-                  AWS · GCP
-                </span>
-              </div>
-
-              {/* PROD — center right (small, supporting) */}
-              <div
-                className="absolute top-1/2 right-[-2.5rem] w-24 h-24 rounded-2xl bg-coral-light border border-border flex items-center justify-center animate-float"
-                style={{ animationDelay: "3.5s" }}
-              >
-                <span className="font-display text-sm font-bold text-foreground">
-                  PROD
-                </span>
-              </div>
-            </div>
-          </motion.div>
 
         </div>
       </div>
