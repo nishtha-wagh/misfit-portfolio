@@ -3,6 +3,15 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+type SectionId =
+  | "#about"
+  | "#experience"
+  | "#projects"
+  | "#posts"
+  | "#resume"
+  | "#contact";
+
+
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
@@ -18,11 +27,18 @@ const Navbar = () => {
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
   const handleNavClick = (e: React.MouseEvent, href: string) => {
-    if (!isHome) {
       e.preventDefault();
-      navigate("/" + href);
-    }
-  };
+
+      if (isHome) {
+        // Already on home → scroll directly
+        document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Navigate to home WITH state
+        navigate("/", { state: { scrollTo: href } });
+      }
+
+      setOpen(false);
+    };
 
   return (
     <motion.nav
@@ -39,7 +55,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={isHome ? link.href : "/" + link.href}
+              href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
               className="font-display text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -63,7 +79,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <a
               key={link.href}
-              href={isHome ? link.href : "/" + link.href}
+              href={link.href}
               onClick={(e) => {
                 setOpen(false);
                 handleNavClick(e, link.href);

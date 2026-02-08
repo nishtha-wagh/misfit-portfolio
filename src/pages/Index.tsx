@@ -7,7 +7,25 @@ import PostsSection from "../components/PostsSection";
 import ResumeSection from "../components/ResumeSection";
 import ContactSection from "../components/ContactSection";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollTo = location.state?.scrollTo;
+
+    if (scrollTo) {
+      // Wait for sections to mount
+      setTimeout(() => {
+        document
+          .querySelector(scrollTo)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
