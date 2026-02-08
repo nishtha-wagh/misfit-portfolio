@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, MessageCircle, Share2, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { posts } from "@/data/posts";
+import { posts } from './data/posts'
 
 const PostsSection = () => {
   return (

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Heart, MessageCircle, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import { posts } from "@/data/posts";
+import NavBar from "@/components/NavBar";
+import { posts } from '../components/data/posts';
 
 const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <NavBar />
       <section className="section-padding pt-32">
         <div className="max-w-4xl mx-auto">
           <motion.div

@@ -1,9 +1,9 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Heart, MessageCircle, Clock, Share2 } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import { posts } from "@/data/posts";
-import MarkdownContent from "@/components/MarkdownContent";
+import NavBar from "@/components/NavBar";
+import { posts } from '../components/data/posts';
+import MarkdownContent from "../components/MarkdownContent";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -13,7 +13,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <NavBar />
       <article className="section-padding pt-32">
         <div className="max-w-3xl mx-auto">
           <motion.div
