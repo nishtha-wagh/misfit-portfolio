@@ -79,7 +79,7 @@ const HeroSection = () => {
 
     {/* Systems Thinking — top left */}
     <div
-      className="absolute -top-6 -left-6 px-5 py-4 rounded-2xl bg-cream border border-border animate-float"
+      className="absolute -top-10 left-6 px-5 py-3 rounded-2xl bg-cream border border-border animate-float"
       style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -87,29 +87,29 @@ const HeroSection = () => {
       </span>
     </div>
 
-    {/* Production ML — top right */}
+    {/* Product Experimentation — top right */}
     <div
-      className="absolute -top-4 right-6 px-5 py-4 rounded-2xl bg-mint-light border border-border animate-float"
+      className="absolute -top-10 right-6 px-5 py-3 rounded-2xl bg-mint-light border border-border animate-float"
       style={{ animationDelay: "1.4s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
-        Production ML
+        Product Experimentation
       </span>
     </div>
 
-    {/* 4+ Years · 500K+ Scale — center right */}
+    {/* 4+ Years in Production — center right */}
     <div
-      className="absolute top-1/2 -right-10 -translate-y-1/2 px-5 py-4 rounded-2xl bg-coral-light border border-border animate-float"
+      className="absolute top-1/2 right-[-4.5rem] -translate-y-1/2 px-5 py-3 rounded-2xl bg-coral-light border border-border animate-float"
       style={{ animationDelay: "2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
-        4+ Years · 500K+ Scale
+        4+ Years in Production
       </span>
     </div>
 
     {/* LLM · Credit Risk — bottom right */}
     <div
-      className="absolute bottom-4 right-10 px-5 py-4 rounded-2xl bg-peach-light border border-border animate-float"
+      className="absolute -bottom-8 right-8 px-5 py-3 rounded-2xl bg-peach-light border border-border animate-float"
       style={{ animationDelay: "2.6s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -119,7 +119,7 @@ const HeroSection = () => {
 
     {/* AWS · GCP · Azure — bottom left */}
     <div
-      className="absolute bottom-8 -left-8 px-5 py-4 rounded-2xl bg-lavender-light border border-border animate-float"
+      className="absolute -bottom-8 left-8 px-5 py-3 rounded-2xl bg-lavender-light border border-border animate-float"
       style={{ animationDelay: "3.2s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
