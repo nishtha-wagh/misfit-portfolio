@@ -73,9 +73,9 @@ const HeroSection = () => {
   transition={{ duration: 1, delay: 0.3 }}
   className="hidden md:flex justify-center"
 >
-  <div className="relative w-[500px] h-[400px]">
+  <div className="relative w-[500px] h-[400px] flex items-center justify-center">
     {/* Main anchor */}
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
+    <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
 
     {/* Systems Thinking — top left */}
     <div
