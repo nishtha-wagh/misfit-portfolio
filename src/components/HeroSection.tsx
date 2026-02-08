@@ -79,7 +79,7 @@ const HeroSection = () => {
 
     {/* Systems Thinking — top left */}
     <div
-      className="absolute top-[90px] left-[50px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
+      className="absolute top-[120px] left-[50px] px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
       style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
