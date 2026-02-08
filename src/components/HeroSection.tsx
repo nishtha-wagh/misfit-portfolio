@@ -79,7 +79,7 @@ const HeroSection = () => {
 
     {/* Systems Thinking — top left */}
     <div
-      className="absolute top-0 left-0 px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
+      className="absolute top-0 left-3 px-4 py-2.5 rounded-2xl bg-cream border border-border animate-float"
       style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
@@ -89,7 +89,7 @@ const HeroSection = () => {
 
     {/* Product Experimentation — top right */}
     <div
-      className="absolute top-0 right-0 px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
+      className="absolute top+3 right+1 px-4 py-2.5 rounded-2xl bg-mint-light border border-border animate-float"
       style={{ animationDelay: "1.4s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
