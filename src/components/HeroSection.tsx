@@ -107,13 +107,13 @@ const HeroSection = () => {
       </span>
     </div>
 
-    {/* LLM · Credit Risk — bottom right */}
+    {/* ML · LLM · Credit Risk — bottom right */}
     <div
-      className="absolute bottom-[70px] right-[70px] px-4 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
+      className="absolute bottom-[70px] right-[70px] px-6 py-2.5 rounded-2xl bg-peach-light border border-border animate-float"
       style={{ animationDelay: "2.6s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
-        LLM · Credit Risk
+        ML · LLM · Credit Risk
       </span>
     </div>
 
