@@ -61,8 +61,8 @@ const AboutSection = () => {
                 key={skill.label}
                 className={`rounded-2xl p-6 border border-border ${skill.color} bg-opacity-50 flex flex-col items-start gap-3`}
               >
-                <skill.icon size={28} />
-                <span className="font-display text-sm font-semibold text-foreground">
+                <skill.icon size={40} />
+                <span className="font-display text-base font-semibold text-foreground">
                   {skill.label}
                 </span>
               </div>
