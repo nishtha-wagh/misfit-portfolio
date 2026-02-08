@@ -1,6 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { posts } from "@/data/posts";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -65,8 +67,11 @@ const BlogPost = () => {
 
         {/* Content */}
         <article className="prose prose-neutral max-w-none">
-          {post.content}
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {post.content}
+        </ReactMarkdown>
         </article>
+
       </div>
     </section>
   );
