@@ -67,7 +67,7 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          <motion.div
+         <motion.div
   initial={{ opacity: 0, scale: 0.9 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 1, delay: 0.3 }}
@@ -77,52 +77,58 @@ const HeroSection = () => {
     {/* Main anchor */}
     <div className="w-72 h-72 rounded-full bg-pastel-gradient animate-float" />
 
-    {/* 4+ yrs — top right (primary) */}
+    {/* Systems Thinking — top left */}
     <div
-      className="absolute -top-6 right-6 w-32 h-32 rounded-2xl bg-mint-light border border-border flex items-center justify-center animate-float"
-      style={{ animationDelay: "1s" }}
-    >
-      <span className="font-display text-3xl font-bold text-foreground">4+</span>
-      <span className="text-xs text-muted-foreground ml-1">yrs</span>
-    </div>
-
-    {/* ML — bottom left */}
-    <div
-      className="absolute bottom-12 -left-6 w-28 h-28 rounded-2xl bg-lavender-light border border-border flex items-center justify-center animate-float"
-      style={{ animationDelay: "2s" }}
-    >
-      <span className="font-display text-2xl font-bold text-foreground">ML</span>
-    </div>
-
-    {/* LLM — bottom right */}
-    <div
-      className="absolute bottom-1 right-9 w-28 h-28 rounded-2xl bg-peach-light border border-border flex items-center justify-center animate-float"
-      style={{ animationDelay: "2.5s" }}
-    >
-      <span className="font-display text-xl font-bold text-foreground">LLM</span>
-    </div>
-
-    {/* AWS · GCP — top left */}
-    <div
-      className="absolute -top-4 -left-4 w-36 h-24 rounded-2xl bg-cream border border-border flex items-center justify-center animate-float"
-      style={{ animationDelay: "3s" }}
+      className="absolute -top-6 -left-6 px-5 py-4 rounded-2xl bg-cream border border-border animate-float"
+      style={{ animationDelay: "0.8s" }}
     >
       <span className="font-display text-sm font-semibold text-foreground">
-        AWS · GCP
+        Systems Thinking
       </span>
     </div>
 
-    {/* PROD — center right (small, supporting) */}
+    {/* Production ML — top right */}
     <div
-      className="absolute top-1/2 right-[-2.5rem] w-24 h-24 rounded-2xl bg-coral-light border border-border flex items-center justify-center animate-float"
-      style={{ animationDelay: "3.5s" }}
+      className="absolute -top-4 right-6 px-5 py-4 rounded-2xl bg-mint-light border border-border animate-float"
+      style={{ animationDelay: "1.4s" }}
     >
-      <span className="font-display text-sm font-bold text-foreground">
-        PROD
+      <span className="font-display text-sm font-semibold text-foreground">
+        Production ML
+      </span>
+    </div>
+
+    {/* 4+ Years · 500K+ Scale — center right */}
+    <div
+      className="absolute top-1/2 -right-10 -translate-y-1/2 px-5 py-4 rounded-2xl bg-coral-light border border-border animate-float"
+      style={{ animationDelay: "2s" }}
+    >
+      <span className="font-display text-sm font-semibold text-foreground whitespace-nowrap">
+        4+ Years · 500K+ Scale
+      </span>
+    </div>
+
+    {/* LLM · Credit Risk — bottom right */}
+    <div
+      className="absolute bottom-4 right-10 px-5 py-4 rounded-2xl bg-peach-light border border-border animate-float"
+      style={{ animationDelay: "2.6s" }}
+    >
+      <span className="font-display text-sm font-semibold text-foreground">
+        LLM · Credit Risk
+      </span>
+    </div>
+
+    {/* AWS · GCP · Azure — bottom left */}
+    <div
+      className="absolute bottom-8 -left-8 px-5 py-4 rounded-2xl bg-lavender-light border border-border animate-float"
+      style={{ animationDelay: "3.2s" }}
+    >
+      <span className="font-display text-sm font-semibold text-foreground">
+        AWS · GCP · Azure
       </span>
     </div>
   </div>
 </motion.div>
+
 
         </div>
       </div>
