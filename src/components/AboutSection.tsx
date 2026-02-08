@@ -34,14 +34,14 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="space-y-4 text-muted-foreground font-body leading-relaxed"
+            className="space-y-4 text-muted-foreground font-body leading-relaxed text-base"
           >
             <p>
   I'm a <b>Senior Data Scientist with 4+ years</b> building production ML systems from messy, ambiguous problems to deployed solutions driving real decisions. My experience spans <b>credit risk modeling, LLM pipelines, and experimentation</b>, working across the full lifecycle from feature engineering to monitoring systems at scale.
 </p>
 
 <p>
-  At <b>Amazon</b>, I built credit risk models on <b>AWS serving 500K+ daily decisions</b> and optimized pipelines that cut runtime by <b>95%</b>. At <b>ASU</b>, I'm deploying <b>LLM systems on GCP processing 20K+ weekly</b> and running A/B tests that <b>improved engagement by 7%</b>. My approach: question the defaults, validate with data, and build systems designed for production—not just notebooks.
+  At <b>Amazon</b>, I built credit risk models on <b>AWS serving 500K+ daily decisions</b> and optimized pipelines that cut runtime by <b>95%</b>. At <b>ASU</b>, I'm deploying <b>LLM systems on GCP processing 20K+ weekly</b> and running A/B tests that <b>improved engagement by 7%</b>. My approach: question the defaults, validate with data, and build systems designed for production.
 </p>
           </motion.div>
 
