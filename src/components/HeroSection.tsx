@@ -43,7 +43,7 @@ const HeroSection = () => {
               className="text-lg text-muted-foreground max-w-lg mb-8 font-body"
             >
               Hello there!
-              I'm Nishtha. I stumbled into data science and discovered I'm weirdly good at the parts most people hate: messy data, unclear requirements, and stakeholders who don't know what they need. I question the problem before picking an algorithm and that's how I get systems to actually ship to production.
+              I'm Nishtha. I stumbled into data science and discovered I'm weirdly good at the messy parts: unclear requirements, stakeholders who don't know what they need, and systems that actually ship to production.
             </motion.p>
 
             <motion.div

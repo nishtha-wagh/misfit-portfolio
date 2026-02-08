@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 const socials = [
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@misfitds.com" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/nishthawagh99/" },
+  { icon: Github, label: "GitHub", href: "https://github.com/nishtha-wagh" },
+  { icon: Mail, label: "Email", href: "mailto:nishtha.wagh.1999@gmail.com" },
 ];
 
 const ContactSection = () => {
@@ -22,10 +21,10 @@ const ContactSection = () => {
             Let's Connect
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Got a <span className="text-gradient">misfit</span> idea?
+            Got a data question worth <span className="text-gradient">debating</span> ?
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-10 max-w-lg mx-auto">
-            Whether it's a collaboration, a question, or just a chat about data — 
+            Whether it's a collaboration, a question, or a real-world ML problem, 
             I'd love to hear from you.
           </p>
         </motion.div>
@@ -56,7 +55,7 @@ const ContactSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-sm text-muted-foreground font-display"
         >
-          © 2026 Mis.fit Data Scientist. Breaking patterns, one dataset at a time.
+          © 2026 The Data Skeptic. Breaking patterns, one dataset at a time.
         </motion.p>
       </div>
     </section>
