@@ -12,16 +12,17 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
     let key = 0;
 
     while (i < lines.length) {
-      const line = lines[i];
+      const rawLine = lines[i];
+      const line = rawLine.trimStart();
 
       // Code block
       if (line.startsWith("```")) {
         const lang = line.slice(3).trim();
         const codeLines: string[] = [];
         i++;
-        while (i < lines.length && !lines[i].startsWith("```")) {
-          codeLines.push(lines[i]);
-          i++;
+        while (i < lines.length && !lines[i].trimStart().startsWith("```")) {
+        codeLines.push(lines[i].trimStart());
+        i++;
         }
         i++; // skip closing ```
         elements.push(
