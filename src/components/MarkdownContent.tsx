@@ -6,37 +6,39 @@ interface MarkdownContentProps {
 
 const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
   const renderMarkdown = (md: string): React.ReactNode[] => {
-    const lines = md.split("\n");
+    const lines = md
+            .split("\n")
+            .map(line => line.replace(/^\s+/, ""));
     const elements: React.ReactNode[] = [];
     let i = 0;
     let key = 0;
 
     while (i < lines.length) {
-      const rawLine = lines[i];
-      const line = rawLine.trimStart();
+      const line = lines[i];
+
 
       // Code block
       if (line.startsWith("```")) {
-        const lang = line.slice(3).trim();
-        const codeLines: string[] = [];
-        i++;
-        while (i < lines.length && !lines[i].trimStart().startsWith("```")) {
-        codeLines.push(lines[i].trimStart());
-        i++;
-        }
-        i++; // skip closing ```
-        elements.push(
-          <pre
-            key={key++}
-            className="rounded-xl bg-muted p-5 overflow-x-auto my-6 border border-border"
-          >
-            <code className="text-sm font-mono text-foreground leading-relaxed">
-              {codeLines.join("\n")}
-            </code>
-          </pre>
-        );
-        continue;
-      }
+            const codeLines: string[] = [];
+            i++;
+
+            while (i < lines.length && !lines[i].startsWith("```")) {
+                codeLines.push(lines[i]);
+                i++;
+            }
+
+            i++; // skip closing ```
+
+            elements.push(
+                <pre key={key++} className="rounded-xl bg-muted p-5 overflow-x-auto my-6 border border-border">
+                <code className="text-sm font-mono text-foreground leading-relaxed">
+                    {codeLines.join("\n")}
+                </code>
+                </pre>
+            );
+            continue;
+            }
+
 
       // Headings
       if (line.startsWith("### ")) {
