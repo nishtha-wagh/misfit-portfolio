@@ -17,14 +17,17 @@ const Index = () => {
     const scrollTo = location.state?.scrollTo;
 
     if (scrollTo) {
-      // Wait for sections to mount
       setTimeout(() => {
         document
           .querySelector(scrollTo)
           ?.scrollIntoView({ behavior: "smooth" });
       }, 100);
+
+      // Clear the state so refresh doesn't re-trigger
+      window.history.replaceState({}, document.title);
     }
   }, [location]);
+
 
   return (
     <div className="min-h-screen bg-background">
