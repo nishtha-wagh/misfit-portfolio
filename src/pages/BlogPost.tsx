@@ -46,21 +46,6 @@ const BlogPost = () => {
             <h1 className="text-3xl md:text-5xl font-display font-bold mb-6 leading-tight">
               {post.title}
             </h1>
-
-            <div className="flex items-center gap-4 text-sm text-muted-foreground pb-8 mb-8 border-b border-border">
-              <span className="flex items-center gap-1">
-                <Heart size={16} className="text-coral" />
-                {post.likes} likes
-              </span>
-              <span className="flex items-center gap-1">
-                <MessageCircle size={16} />
-                {post.comments} comments
-              </span>
-              <button className="ml-auto flex items-center gap-1 hover:text-foreground transition-colors">
-                <Share2 size={16} />
-                Share
-              </button>
-            </div>
           </motion.div>
 
           <motion.div
