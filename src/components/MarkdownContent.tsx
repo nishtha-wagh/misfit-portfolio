@@ -12,7 +12,8 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ content }) => {
     let key = 0;
 
     while (i < lines.length) {
-      const line = lines[i];
+      const rawLine = lines[i];
+      const line = rawLine.trimStart();
 
       // Code block
       if (line.startsWith("```")) {
